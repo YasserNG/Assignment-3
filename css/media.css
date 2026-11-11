@@ -1,0 +1,139 @@
+
+
+
+
+@media screen and (max-width: 1279px) {
+
+    /* ------------ navbar ------------ */
+
+    .nav-links,
+    .sub-btn {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 55px;
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 8px;
+        box-shadow: 4px 4px 0 black;
+        font-size: 32px;
+        cursor: pointer;
+        transition: all .2s;
+    }
+
+    .menu-toggle:hover {
+        transform: translate(3px, 3px);
+        box-shadow: 1px 1px 0 black;
+    }
+
+    /* ------------ articles ------------ */
+
+    .article-info span {
+        width: calc(50% - 5px);
+    }
+
+    /* ------------ authors ------------ */
+
+    .authors-list {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ------------ footer ------------ */
+
+    .footer-bottom {
+        flex-direction: column;
+
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+
+    /* ------------ header ------------ */
+
+    .header-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    /* ------------ articles ------------ */
+
+    .articles-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .article-card {
+        flex-direction: column;
+    }
+
+    /* ------------ authors ------------ */
+
+    .authors-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ------------ community ------------ */
+
+
+    .community-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ------------ footer ------------ */
+
+
+    .footer-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-about {
+        grid-column: 1 / 3;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    /* ------------ footer ------------ */
+
+    .footer-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-about {
+        grid-column: 1 / 2;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 639px) {
+
+    /* ------------ articles ------------ */
+
+    .article-info span {
+        width: 100%;
+    }
+
+}
